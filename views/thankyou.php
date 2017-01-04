@@ -34,8 +34,8 @@
         $energySkills=$_POST['energySkills'];
         $intelliSkills=$_POST['intelliSkills'];
 
-        echo "dumping POST";
-        var_dump($_POST);
+        //echo "dumping POST";
+        //var_dump($_POST);
 
         //This shouldnt be there
         //if($report=='allUsers'){
@@ -45,8 +45,9 @@
                 ");
             $results->execute([]);
 
-            var_dump($results);
-
+            //var_dump($results);
+                //object(PDOStatement)#47 (1) { ["queryString"]=> string(65) "SELECT * FROM public.trim_code " }
+            
             //$result = $sth->fetch();
             $lines= $results->fetchAll(PDO::FETCH_ASSOC);
 

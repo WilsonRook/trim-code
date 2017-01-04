@@ -26,7 +26,7 @@ $app->get('/', function() use($app) {
 $dbopts = parse_url(getenv('DATABASE_URL'));
 //print_r(array_values($dbopts));
 //echo "var_dump dbopts";
-var_dump($dbopts);
+//var_dump($dbopts);
 
 $app->register(new Herrera\Pdo\PdoServiceProvider(),
                array(
@@ -36,7 +36,7 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
                )
 );
 //echo "var_dump app";
-var_dump($app);
+//var_dump($app);
 
 
 // **************some code that worked in another project******************
