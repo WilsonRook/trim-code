@@ -80,7 +80,7 @@ button,
 input,
 select,
 textarea {
-    font-family: "MuseoSans-500";
+    font-family: MuseoSans-500;
    /* 
    font-family: sans-serif;
    */
@@ -510,7 +510,7 @@ table {
   }
 
 html {overflow-y: scroll; overflow-x: scroll;} 
-body {font-family: "MuseoSans-500"; background:#f0eeed; color: #676767;}
+body {font-family: MuseoSans-500; background:#f0eeed; color: #676767;}
    /* 
    body {font-family: 'Open Sans', sans-serif; background:#f0eeed; color: #676767;}
 
@@ -648,7 +648,7 @@ form td textarea {
     border: 1px solid #a5a5a5;
     font-size: 14px;
 
-    font-family: "MuseoSans-500";
+    font-family: MuseoSans-500;
     /*
     font-family: 'Open Sans', sans-serif;
     */
@@ -690,7 +690,7 @@ form input[type="submit"] {
     font-size: 16px;
     padding: 6px;
 
-    font-family: "MuseoSans-500";
+    font-family: MuseoSans-500;
     /*
     font-family: 'Open Sans', sans-serif;
     */
