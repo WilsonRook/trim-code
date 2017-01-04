@@ -61,12 +61,12 @@
             </table></div>';
 
 
-            $sql = "INSERT INTO public.trim_code (id,full_name, email, project_repo, project_url,
+            $sql = "INSERT INTO public.trim_code (full_name, email, project_repo, project_url,
                                                 oop_skills, mod_dev_skills, full_stack_skills, testing_skills, db_skills, 
                                                 debug_skills, prob_solve_skills, javascript_skills, html_skills, css_skills,
                                                 teamwork_skills, motivation_skills, communication_skills, energy_skills, intelli_skills
                                                 )
-	    			VALUES                      (?,?,?,?,?
+	    			VALUES                      (?,?,?,?
                                                 ?,?,?,?,?
                                                 ?,?,?,?,?
                                                 ?,?,?,?,?
