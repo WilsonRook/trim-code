@@ -1,5 +1,6 @@
 <?php 
-    include("http://safe-earth-80009.herokuapp.com/inc/connect.php");
+    //include("http://safe-earth-80009.herokuapp.com/inc/connect.php");
+    include("../inc/connect.php");
     $pageTitle = "Thank You!"; 
 
     include("header.php"); 
@@ -33,6 +34,7 @@
         $energySkills=$_POST['energySkills'];
         $intelliSkills=$_POST['intelliSkills'];
 
+        echo "dumping POST";
         var_dump($_POST);
 
         //This shouldnt be there
