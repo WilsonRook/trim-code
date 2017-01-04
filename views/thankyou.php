@@ -35,7 +35,7 @@
 
         //This shouldnt be there
         //if($report=='allUsers'){
-            $results = $app->prepare(
+            $results = $pdo->prepare(
                 "SELECT * 
                 FROM public.trim_code 
                 ");
