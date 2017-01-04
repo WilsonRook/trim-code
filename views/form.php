@@ -1,4 +1,4 @@
-<form method="post" action="public/create.php">
+<form method="post" action="views/thankyou.php">
 			
 			<p>
 				<label for="fullName">Full Name</label>
