@@ -36,6 +36,8 @@ $app->get('/', function() use($app) {
 
 //original code from heroku will test if needing to put in  credentials.
 $dbopts = parse_url(getenv('DATABASE_URL'));
+print_r(array_values($dbopts));
+
 $app->register(new Herrera\Pdo\PdoServiceProvider(),
                array(
                    'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"] . ';port=' . $dbopts["port"],
@@ -46,20 +48,20 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
 
 
 
-// some code that worked in another project
+// // some code that worked in another project
 
-$host = $app['pdo.dsn.host'];
-$dbname = $app['pdo.dsn.pgsql:dbname'];
-$user = $app['pdo.username'];
-$pass = $app['pdo.password'];
-$charset = 'utf8';
+// $host = $app['pdo.dsn.host'];
+// $dbname = $app['pdo.dsn.pgsql:dbname'];
+// $user = $app['pdo.username'];
+// $pass = $app['pdo.password'];
+// $charset = 'utf8';
 
-//$dsn = 'mysql:dbname=inteltre_medialibrary;host=localhost';
+// //$dsn = 'mysql:dbname=inteltre_medialibrary;host=localhost';
 
-$dsn = "pgsql:host=$host;dbname=$dbname;charset=$charset";
-$opt = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false
-];
-$pdo = new PDO($dsn, $user, $pass, $opt);
+// $dsn = "pgsql:host=$host;dbname=$dbname;charset=$charset";
+// $opt = [
+//     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+//     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+//     PDO::ATTR_EMULATE_PREPARES   => false
+// ];
+// $pdo = new PDO($dsn, $user, $pass, $opt);
