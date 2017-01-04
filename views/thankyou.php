@@ -72,7 +72,7 @@
                                                 ?,?,?,?,?
                                                 )
 	    			";
-	    	$pdo->prepare($sql)->execute([NULL,$fullName,$email,$projectRepo,$projectUrl,
+	    	$pdo->prepare($sql)->execute([$fullName,$email,$projectRepo,$projectUrl,
                                         $oopSkills, $moddevSkills, $fullstackSkills, $testingSkills, $dbSkills,
                                         $debugSkills, $probSkills, $jsSkills, $htmlSkills, $cssSkills,
                                         $teamSkills, $movationSkills, $commSkills, $energySkills, $intelliSkills
