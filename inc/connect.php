@@ -36,7 +36,8 @@ $app->get('/', function() use($app) {
 
 //original code from heroku will test if needing to put in  credentials.
 $dbopts = parse_url(getenv('DATABASE_URL'));
-print_r(array_values($dbopts));
+//print_r(array_values($dbopts));
+echo "var_dump dbopts";
 var_dump($dbopts);
 
 $app->register(new Herrera\Pdo\PdoServiceProvider(),
@@ -46,7 +47,8 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
                    'pdo.password' => $dbopts["pass"]
                )
 );
-
+echo "var_dump app";
+var_dump($app);
 
 
 // // some code that worked in another project
