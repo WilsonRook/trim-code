@@ -59,6 +59,24 @@
                 <tr><th>Energy Level</th><td>'.$energySkills.'</td></tr>
                 <tr><th>Intelligence / Aptitude</th><td>'.$intelliSkills.'</td></tr>
             </table></div>';
+
+
+            $sql = "INSERT INTO public.trim_code (full_name, email, project_repo, project_url,
+                                                oop_skills, mod_dev_skills, full_stack_skills, testing_skills, db_skills, 
+                                                debug_skills, prob_solve_skills, javascript_skills, html_skills, css_skills,
+                                                teamwork_skills, motivation_skills, communication_skills, energy_skills, intelli_skills
+                                                )
+	    			VALUES                      (?,?,?,?
+                                                ?,?,?,?,?
+                                                ?,?,?,?,?
+                                                ?,?,?,?,?
+                                                )
+	    			";
+	    	$pdo->prepare($sql)->execute([$fullName,$email,$projectRepo,$projectUrl,
+                                        $oopSkills, $moddevSkills, $fullstackSkills, $testingSkills, $dbSkills,
+                                        $debugSkills, $probSkills, $jsSkills, $htmlSkills, $cssSkills,
+                                        $teamSkills, $movationSkills, $commSkills, $energySkills, $intelliSkills
+                                        ]);
         //echo "dumping POST";
         //var_dump($_POST);
 
