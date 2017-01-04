@@ -1,5 +1,5 @@
 <?php 
-    include("inc/connect.php");
+    include("http://safe-earth-80009.herokuapp.com/inc/connect.php");
     $pageTitle = "Thank You!"; 
 
     include("header.php"); 
@@ -8,7 +8,7 @@
 <div class="section page">      <!-- class="section page">   -->
     <div align="center" class="">  <!-- // class ="wrapper">  -->
         <h1>Thank you! Your request is being processed.</h1>
-        <h3>Below is the contents of the database.</h3>
+        <h3>Below: The contents of the database.</h3>
     </div>
 
     <?php	

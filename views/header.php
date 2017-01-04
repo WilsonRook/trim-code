@@ -10,7 +10,7 @@
 
 
 		<!--Not sure if server will use absolute or relative references. Use above examples for help.-->
-		<link rel="stylesheet" href="https://safe-earth-80009.herokuapp.com/css/style.css" type="text/css">
+		<link rel="stylesheet" href="http://safe-earth-80009.herokuapp.com/css/style.css" type="text/css">
 
 
 
