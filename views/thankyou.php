@@ -33,6 +33,8 @@
         $energySkills=$_POST['energySkills'];
         $intelliSkills=$_POST['intelliSkills'];
 
+        var_dump($_POST);
+
         //This shouldnt be there
         //if($report=='allUsers'){
             $results = $pdo->prepare(
@@ -40,6 +42,9 @@
                 FROM public.trim_code 
                 ");
             $results->execute([]);
+
+            var_dump($results);
+
             //$result = $sth->fetch();
             $lines= $results->fetchAll(PDO::FETCH_ASSOC);
 
