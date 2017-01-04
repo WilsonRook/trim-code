@@ -33,7 +33,8 @@
         $energySkills=$_POST['energySkills'];
         $intelliSkills=$_POST['intelliSkills'];
 
-        if($report=='allUsers'){
+        //This shouldnt be there
+        //if($report=='allUsers'){
             $results = $app->prepare(
                 "SELECT * 
                 FROM public.trim_code 

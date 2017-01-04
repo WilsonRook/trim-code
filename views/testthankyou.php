@@ -8,5 +8,5 @@
 <div class="section page">      <!-- class="section page">   -->
     <div align="center" class="">  <!-- // class ="wrapper">  -->
         <h1>Test  TESTing    Thank you! Your request is being processed.</h1>
-        <h3>Below is the contents of the database.</h3>
+        <h3>Below: the contents of the database.</h3>
     </div>
