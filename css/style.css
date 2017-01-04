@@ -506,7 +506,7 @@ table {
     padding-right: 40px;
   }
 
-html {overflow-y: scroll; overflow-x: hidden;}
+html {overflow-y: scroll; overflow-x: scroll;} 
 body {font-family: 'Open Sans', sans-serif; background:#f0eeed; color: #676767;}
 
 .wrapper {width: 980px; margin: 0 auto;}
