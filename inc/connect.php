@@ -10,6 +10,30 @@
 //                )
 // );
 
+
+
+// a bunch of code from http://stackoverflow.com/questions/26091113/heroku-php-connecting-to-cleardb-via-herrera-pdo
+//
+require('../vendor/autoload.php');
+
+use Herrera\Pdo\PdoServiceProvider;
+use Silex\Application;
+
+$app = new Application();
+$app['debug'] = true;
+
+// Register the monolog logging service
+$app->register(new Silex\Provider\MonologServiceProvider(), array(
+  'monolog.logfile' => 'php://stderr',
+));
+// Our web handlers
+$app->get('/', function() use($app) {
+  $app['monolog']->addDebug('logging output.');
+  return 'Hello';
+});
+
+
+
 //original code from heroku will test if needing to put in  credentials.
 $dbopts = parse_url(getenv('DATABASE_URL'));
 $app->register(new Herrera\Pdo\PdoServiceProvider(),
