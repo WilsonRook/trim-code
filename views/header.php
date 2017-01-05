@@ -19,7 +19,13 @@
 <body>
 	<div class="header">
 		<div class="wrapper">
-						
+
+			<h1 class="branding-title"><a href="./">Personal Media Library</a></h1>
+
+			<ul class="nav">
+                <li><a href="http://safe-earth-80009.herokuapp.com/">Survey</a></li>
+				<li><a href="http://safe-earth-80009.herokuapp.com/views/report.php">Report</a></li>
+            </ul>
 
 		</div>
 
