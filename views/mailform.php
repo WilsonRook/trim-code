@@ -1,6 +1,6 @@
  <h1>If you would like to send these results, verify information, enter to address and send.</h1>
 
-<form method="post" name="myemailform" action="../inc/sendmail.php">
+<form method="post" name="myemailform" action="http://safe-earth-80009.herokuapp.com/inc/sendmail.php">
 
         <p>
             <label for="fullName">Full Name</label>
