@@ -60,6 +60,7 @@
                 <tr><th>Intelligence / Aptitude</th><td>'.$intelliSkills.'</td></tr>
             </table></div>';
 
+            include("mailform.php");
 /*
             $sql = "INSERT INTO public.trim_code (full_name, email, project_repo, project_url,
                                                 oop_skills, mod_dev_skills, full_stack_skills, testing_skills, db_skills, 
