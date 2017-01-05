@@ -60,7 +60,7 @@
         //Send the email!
         mail($to,$email_subject,$email_body,$headers);
         //done. redirect to thank-you page.
-        header('Location: emailsent.php');
+        header('Location: http://safe-earth-80009.herokuapp.com/views/emailsent.php');
         
 ?>
 
